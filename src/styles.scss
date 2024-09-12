@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Michroma", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#about,
+#projects,
+#contact {
+  scroll-margin-top: calc(var(--navbar-height) - 1px);
+}
+
+.error {
+  font-size: 11px;
+  color: red;
+}
+
+form.ng-submitted {
+  input.ng-invalid {
+    border: 2px solid red !important;
+  }
+}
+
+.success {
+  font-size: 11px;
+  color: green;
+}

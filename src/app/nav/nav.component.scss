@@ -1,0 +1,160 @@
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+
+  &-logo {
+    display: block;
+    cursor: pointer;
+
+    img {
+      height: 100px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .logo-mobile {
+    display: none;
+    cursor: pointer;
+
+    img {
+      height: 100px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      font-size: 15px;
+      margin-right: 20px;
+      position: relative;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+
+        i {
+          color: #f0a500;
+        }
+      }
+
+      i {
+        transition: color 0.3s;
+        margin: 0 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #f0a500;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .navbar {
+    &-logo {
+      img {
+        height: 150px;
+      }
+    }
+
+    &-menu {
+      li {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar-logo img {
+    height: 90px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-logo img {
+    height: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+
+    &-logo {
+      img {
+        height: 90px;
+      }
+    }
+
+    &-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+
+      &.active {
+        display: flex;
+      }
+
+      li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+
+        i {
+          display: none;
+        }
+
+        a {
+          display: block;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-logo img {
+    height: 90px;
+  }
+}

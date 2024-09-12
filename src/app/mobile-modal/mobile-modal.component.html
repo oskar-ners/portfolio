@@ -1,0 +1,21 @@
+<div class="mobile-modal"
+     [ngClass]="mobileModalService.isModalOpen() ? 'open' : ''">
+    <ul>
+        <li (click)="mobileModalService.isModalOpen.set(false)">
+            <i class="fa-solid fa-arrow-up"></i>
+            <a href="#top">Move to the top</a>
+        </li>
+        <li (click)="mobileModalService.isModalOpen.set(false)">
+            <i class="fa-solid fa-user"></i>
+            <a href="#about">About me</a>
+        </li>
+        <li (click)="mobileModalService.isModalOpen.set(false)">
+            <i class="fa-solid fa-star"></i>
+            <a href="#projects">Projects</a>
+        </li>
+        <li (click)="mobileModalService.isModalOpen.set(false)">
+            <i class="fa-solid fa-phone"></i>
+            <a href="#contact">Contact me</a>
+        </li>
+    </ul>
+</div>
