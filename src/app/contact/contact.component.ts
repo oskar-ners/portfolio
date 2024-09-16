@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import emailjs from 'emailjs-com';
 
 @Component({
   selector: 'app-contact',
@@ -14,13 +15,22 @@ export class ContactComponent {
   userMessage: string = '';
   showMessageSent: boolean = false;
 
-  onSubmit(form: NgForm): void {
+  onSubmit(form: NgForm, e: Event): void {
     if (form.valid) {
-      this.showMessageSent = true;
-      form.resetForm();
-      setTimeout(() => {
-        this.showMessageSent = false;
-      }, 5000);
+      emailjs
+        .sendForm(
+          'service_1p6i1pj',
+          'template_tbp4l7k',
+          e.target as HTMLFormElement,
+          'cXkHo2k66HMGWwQsE'
+        )
+        .then(() => {
+          this.showMessageSent = true;
+          form.resetForm();
+          setTimeout(() => {
+            this.showMessageSent = false;
+          }, 5000);
+        });
     }
   }
 }

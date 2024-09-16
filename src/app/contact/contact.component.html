@@ -3,7 +3,7 @@
     <img style="height: 250px;"
          [src]="'assets/images/logo.png'">
     <form #form="ngForm"
-          (ngSubmit)="onSubmit(form)">
+          (ngSubmit)="onSubmit(form, $event)">
         <label for="name">
             Name
             <input type="text"
