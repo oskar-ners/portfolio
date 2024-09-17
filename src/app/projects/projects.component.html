@@ -1,26 +1,22 @@
 <section class="projects">
-    <div>
-        <p>project name</p>
-        <p>link</p>
-        <img src="">
-        <p>description</p>
-    </div>
-    <div>
-        <p>project name</p>
-        <p>link</p>
-        <img src="">
-        <p>description</p>
-    </div>
-    <div>
-        <p>project name</p>
-        <p>link</p>
-        <img src="">
-        <p>description</p>
-    </div>
-    <div>
-        <p>project name</p>
-        <p>link</p>
-        <img src="">
-        <p>description</p>
+    <div class="project-card">
+        <app-slide-show [slides]="projectOneImages"></app-slide-show>
+        <div class="project-content">
+            <h3 class="project-title">To do App & Firebase</h3>
+            <p class="project-description">
+                This is a comprehensive to-do application that integrates Firebase Authentication and Firestore Database
+                to manage user accounts and store tasks. Users can register, log in, and update their usernames securely
+                through Firebase Authentication. The to-do list functionality allows users to add, edit, and delete
+                tasks, with all data stored in real-time in Firestore Database. Additionally, the app features a
+                WeatherService where users can input a city name to get real-time weather information, making it a
+                versatile tool for both task management and daily planning.
+            </p>
+            <a href="https://github.com/oskar-ners/todoapp-firebase"
+               target="_blank"
+               aria-label="GitHub"
+               class="project-link">
+                <i class="fab fa-github"></i> Code on GitHub
+            </a>
+        </div>
     </div>
 </section>
