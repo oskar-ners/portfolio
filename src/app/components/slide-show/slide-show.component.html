@@ -1,13 +1,8 @@
-<div class="slideshow-container">
-    @for(slide of slides; track slide; let i = $index) {
-    <div class="mySlides">
-        <img [src]="slide"
-             style="width:100%">
-    </div>
-    }
-
-    <a class="prev"
-       (click)="plusSlides(-1)">&#10094;</a>
-    <a class="next"
-       (click)="plusSlides(1)">&#10095;</a>
+<div class="slider">
+    <button class="arrow left"
+            (click)="prevImage()">&#9664;</button>
+    <img [src]="currentImage"
+         alt="Project Image">
+    <button class="arrow right"
+            (click)="nextImage()">&#9654;</button>
 </div>
