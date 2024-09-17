@@ -114,6 +114,9 @@
 }
 
 @media (max-width: 576px) {
+  .intro-text {
+    margin-top: calc(var(--navbar-height) - 35px);
+  }
   .intro-text h1 {
     font-size: 1.8rem;
   }
