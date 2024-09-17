@@ -6,6 +6,7 @@
   background-color: #f9fafc;
 
   .project-card {
+    border: 3px solid black;
     background: linear-gradient(145deg, #ffffff, #f3f3f3);
     border-radius: 12px;
     overflow: hidden;
@@ -13,7 +14,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-      transform: translateY(-20px);
+      transform: translateY(-10px);
       box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
     }
 
@@ -54,7 +55,7 @@
         text-decoration: none;
         display: inline-flex;
         align-items: center;
-        transition: color 0.3s ease;
+        transition: 0.3s ease;
 
         i {
           margin-right: 8px;
@@ -63,6 +64,7 @@
 
         &:hover {
           color: #d48900;
+          transform: scale(1.1);
         }
       }
     }

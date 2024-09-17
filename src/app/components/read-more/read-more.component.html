@@ -1,0 +1,8 @@
+<div class="read-more-container">
+    <p>{{ displayText }}</p>
+    @if (text.length > maxLength) {
+    <button (click)="toggleReadMore()">
+        {{ showMore ? 'Read Less' : 'Read More' }}
+    </button>
+    }
+</div>
