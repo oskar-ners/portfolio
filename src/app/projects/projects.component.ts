@@ -46,5 +46,5 @@ export class ProjectsComponent {
   projectThreeDescription: string =
     'eCommerce platform that allows users to register and log in using Firebase Authentication. The application supports the full shopping process—from browsing products by category on the Product Listing Page (PLP) and viewing detailed information on the Product Detail Page (PDP), to adding items to the cart and wishlist, and completing the order through the Checkout process. Users can also search for products, and after making a purchase, they receive an order confirmation on the Order Confirmation page. In the Profile section, users can view their order history. All data related to categories, products, and user orders is stored in Firestore Database.';
 
-  projectFourDescription: string = 'Project two description';
+  projectFourDescription: string = 'Lightweight chat application built with Angular and integrated with Firebase for seamless authentication and real-time messaging. Users can easily register, log in, and connect with others through instant message exchanges. Utilizing Firestore for data storage and Firebase Storage for user-uploaded images, SimpleChat provides a straightforward and secure platform for communication.';
 }
