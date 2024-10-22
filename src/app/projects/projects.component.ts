@@ -35,7 +35,7 @@ export class ProjectsComponent {
     'assets/images/project3/project3-3.png',
   ];
 
-  projectFourImages: string[] = ['assets/images/project1/project1-3.png'];
+  projectFourImages: string[] = ['assets/images/project4/2.png'];
 
   projectOneDescription: string =
     'This is a comprehensive to-do application that integrates Firebase Authentication and Firestore Database to manage user accounts and store tasks. Users can register, log in, and update their usernames securely through Firebase Authentication. The to-do list functionality allows users to add, edit, and delete tasks, with all data stored in real-time in Firestore Database. Additionally, the app features a WeatherService where users can input a city name to get real-time weather information, making it a versatile tool for both task management and daily planning.';
@@ -46,5 +46,6 @@ export class ProjectsComponent {
   projectThreeDescription: string =
     'eCommerce platform that allows users to register and log in using Firebase Authentication. The application supports the full shopping process—from browsing products by category on the Product Listing Page (PLP) and viewing detailed information on the Product Detail Page (PDP), to adding items to the cart and wishlist, and completing the order through the Checkout process. Users can also search for products, and after making a purchase, they receive an order confirmation on the Order Confirmation page. In the Profile section, users can view their order history. All data related to categories, products, and user orders is stored in Firestore Database.';
 
-  projectFourDescription: string = 'Lightweight chat application built with Angular and integrated with Firebase for seamless authentication and real-time messaging. Users can easily register, log in, and connect with others through instant message exchanges. Utilizing Firestore for data storage and Firebase Storage for user-uploaded images, SimpleChat provides a straightforward and secure platform for communication.';
+  projectFourDescription: string =
+    'Lightweight chat application built with Angular and integrated with Firebase for seamless authentication and real-time messaging. Users can easily register, log in, and connect with others through instant message exchanges. Utilizing Firestore for data storage and Firebase Storage for user-uploaded images, SimpleChat provides a straightforward and secure platform for communication.';
 }
