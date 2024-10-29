@@ -25,7 +25,6 @@ export class ProjectsComponent {
     'assets/images/project2/project2-0.png',
     'assets/images/project2/project2-1.png',
     'assets/images/project2/project2-2.png',
-    'assets/images/project2/project2-3.png',
   ];
 
   projectThreeImages: string[] = [
